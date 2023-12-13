@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurants Finder</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="form-container">
+      <form id="radius-form">
+        <label for="radius">Enter the radius for restaurant search (in meters):</label>
+        <input type="number" id="radius" name="radius" required>
+        <button type="submit" class="button-link">Submit</button>
+      </form>
+    </div>
+
+    <div id="map"></div>
+    <div id="restaurants-container"></div>
+  </div>
+
+  <script src="app.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDG1iA_bUwWpg3oEvMPcrMUg0rrGhg_srw&callback=initMap&libraries=places" async defer></script>
+</body>
+</html>
+
+
